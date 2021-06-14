@@ -4,9 +4,6 @@ import { getJobRecords } from '../lib/getJobs'
 import Link from 'next/link'
 
 export default function Home({ jobRecords }) {
-  console.log(jobRecords)
-
-  useEffect(() => {})
 
   return (
     <div className='min-h-screen'>
