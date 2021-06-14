@@ -18,9 +18,11 @@ export default function applicationAPI(req, res) {
           Linkedin: data.linkedin,
           Github: data.github,
           Message: data.message,
-          Resume: [{
-            url: data.resume
-          }],
+          // Resume: [
+          //   {
+          //     url: data.resume,
+          //   },
+          // ],
         },
       },
     ],
