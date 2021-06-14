@@ -37,6 +37,6 @@ export async function getStaticProps() {
     props: {
       jobRecords: await getJobRecords(),
     },
-    revalidate: 10,
+    // revalidate: 10,
   }
 }
