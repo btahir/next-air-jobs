@@ -17,7 +17,6 @@ function JobContent({ job }) {
     setJobId(String(job.recordId))
     setJobTitle(job.title)
   })
-  console.log('job', job)
 
   async function handleSubmit(event) {
     event.preventDefault()
