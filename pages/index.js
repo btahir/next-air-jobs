@@ -13,16 +13,17 @@ export default function Home({ jobRecords }) {
       </Head>
 
       <main className='max-w-6xl mx-auto py-12 px-4 text-gray-900'>
-        <h1 className='leading-loose font-extrabold text-4xl text-center text-blue-500'>
+        <h1 className='leading-loose font-extrabold text-4xl sm:text-5xl text-center text-blue-500'>
           Awesome Company Inc.
-        </h1>
-        <div className='py-12 max-w-xl mx-auto space-y-8'>
+        </h1>        
+        <div className='mt-12 sm:mt-16 max-w-xl mx-auto space-y-8'>
+          <h2 className='leading-loose font-extrabold text-2xl sm:text-3xl'>Current Openings</h2>
           {jobRecords.map((item) => (
             <div key={item.recordId} className='flex justify-between'>
               <Link href={`/jobs/${item.recordId}`} passHref>
-                <a className='text-2xl font-bold underline'>{item.title}</a>
+                <a className='text-xl sm:text-2xl font-bold underline'>{item.title}</a>
               </Link>
-              <div className='text-lg text-gray-500'>{item.location}</div>
+              <div className='sm:text-lg text-gray-500'>{item.location}</div>
             </div>
           ))}
         </div>

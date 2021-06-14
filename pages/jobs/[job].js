@@ -10,26 +10,34 @@ function JobContent({ job }) {
   const [message, setMessage] = useState('')
   const [resume, setResume] = useState('')
   const [resumeStatus, setResumeStatus] = useState('Upload Resume')
+  const [jobId, setJobId] = useState('')
+  const [jobTitle, setJobTitle] = useState('')
 
-  useEffect(() => {})
+  useEffect(() => {
+    setJobId(String(job.recordId))
+    setJobTitle(job.title)
+  })
   console.log('job', job)
 
   async function handleSubmit(event) {
     event.preventDefault()
     if (resumeStatus != 'Resume Uploaded!') {
       alert('Upload Resume!')
+    } else {
+      await fetch('/api/application', {
+        method: 'POST',
+        body: JSON.stringify({
+          email,
+          message,
+          name,
+          linkedin,
+          github,
+          resume,
+          jobId,
+          jobTitle
+        }),
+      })
     }
-    await fetch('/api/application', {
-      method: 'POST',
-      body: JSON.stringify({
-        email,
-        message,
-        name,
-        linkedin,
-        github,
-        resume,
-      }),
-    })
   }
 
   function handleUpload(e) {
