@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import { getJobRecords } from '../lib/getJobs'
 import Link from 'next/link'
