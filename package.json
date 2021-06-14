@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.1",
     "@tailwindcss/forms": "^0.3.2",
     "airtable": "^0.11.1",
     "next": "latest",

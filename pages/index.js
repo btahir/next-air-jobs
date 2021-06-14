@@ -13,7 +13,7 @@ export default function Home({ jobRecords }) {
       </Head>
 
       <main className='max-w-6xl mx-auto py-12 px-4 text-gray-900'>
-        <h1 className='leading-loose font-extrabold text-4xl text-center'>
+        <h1 className='leading-loose font-extrabold text-4xl text-center text-blue-500'>
           Awesome Company Inc.
         </h1>
         <div className='py-12 max-w-xl mx-auto space-y-8'>
