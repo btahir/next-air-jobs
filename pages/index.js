@@ -17,11 +17,11 @@ export default function Home({ jobRecords }) {
           Awesome Company Inc.
         </h1>        
         <div className='mt-12 sm:mt-16 max-w-xl mx-auto space-y-8'>
-          <h2 className='leading-loose font-extrabold text-2xl sm:text-3xl'>Current Openings</h2>
+          <h2 className='leading-loose font-extrabold text-2xl sm:text-3xl pb-4'>Current Openings</h2>
           {jobRecords.map((item) => (
             <div key={item.recordId} className='flex justify-between'>
               <Link href={`/jobs/${item.recordId}`} passHref>
-                <a className='text-xl sm:text-2xl font-bold underline'>{item.title}</a>
+                <a className='text-xl sm:text-2xl font-bold underline hover:text-blue-500'>{item.title}</a>
               </Link>
               <div className='sm:text-lg text-gray-500'>{item.location}</div>
             </div>

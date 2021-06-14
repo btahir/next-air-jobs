@@ -15,6 +15,9 @@ export default function applicationAPI(req, res) {
           Email: data.email,
           Job_Id: data.jobId,
           Job_Title: data.jobTitle,
+          Linkedin: data.linkedin,
+          Github: data.github,
+          Message: data.message,
           Resume: [{
             url: data.resume
           }],
