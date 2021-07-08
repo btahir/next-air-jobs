@@ -1,5 +1,11 @@
 # Airtable Job Board With Next.js
 
+<div align="center">
+<img src="https://github.com/btahir/next-air-jobs/blob/main/public/images/demo.png">
+</div>
+
+## Env Variables
+
 Add the following .env variables to your .env.local file (and to Netlify/Vercel when deploying).
 
 ```
