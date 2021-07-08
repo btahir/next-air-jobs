@@ -1,7 +1,7 @@
 # Airtable Job Board With Next.js
 
 <div align="center">
-<img src="https://github.com/btahir/next-air-jobs/blob/main/public/images/demo.png">
+<img src="https://github.com/btahir/next-air-jobs/blob/main/public/demo.png">
 </div>
 
 ## Env Variables
