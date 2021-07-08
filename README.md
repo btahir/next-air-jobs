@@ -18,3 +18,7 @@ AIRTABLE_BASE_ID=
 ```
 yarn && yarn dev
 ```
+
+## Issues
+
+Airtable doesn't let you directly upload files (you need a public URL). A work around would be uploading to a storage solution like S3 or Cloudinary and then moving it (annoying).
